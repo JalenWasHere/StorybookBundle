@@ -65,7 +65,7 @@ HELP
 
         $this->io->listing([
             'Review your <info>package.json</info> and install new dependencies with <info>npm install</info>',
-            'Review your <info>templates/bundles/StorybookBundle/preview.html.twig</info> and adjust your importmap call',
+            'Review your <info>templates/bundles/@StorybookBundle/preview.html.twig</info> and adjust your importmap call',
             'Review your <info>.storybook/main.ts</info> configuration and adjust your Symfony server host',
             'Run your Symfony server',
             'Run <info>npm run storybook</info> to start the Storybook development server',
@@ -222,7 +222,7 @@ YAML;
     {
         $this->io->note('Creating preview template');
 
-        $previewPath = Path::join($this->projectDir, 'templates', 'bundles', 'StorybookBundle', 'preview.html.twig');
+        $previewPath = Path::join($this->projectDir, 'templates', 'bundles', '@StorybookBundle', 'preview.html.twig');
 
         $content = "{% extends '@!Storybook/preview.html.twig' %}\n";
         if ($this->isAssetMapperInstalled()) {
