@@ -64,7 +64,7 @@ When Storybook compiles your stories, it also prepares an HTML document where st
 To customize the iframe, you can override the preview template provided by the bundle:
 
 ```twig
-{# templates/bundles/@StorybookBundle/preview.html.twig #}
+{# templates/bundles/StorybookBundle/preview.html.twig #}
 
 {% extends '@!Storybook/preview.html.twig' %}
 
@@ -116,7 +116,7 @@ Symfony application.
 To use Storybook with a project that uses the [AssetMapper component](https://symfony.com/doc/current/frontend/asset_mapper.html), you need to render your importmap in the preview template:
 
 ```twig
-{# templates/bundles/@StorybookBundle/preview.html.twig #}
+{# templates/bundles/StorybookBundle/preview.html.twig #}
 
 {% extends '@!Storybook/preview.html.twig' %}
 
